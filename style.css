@@ -41,8 +41,11 @@ h2.section { text-align: center; font-size: clamp(26px, 5vw, 36px); margin: 0 0 
 .shots img { width: 210px; height: auto; border-radius: 26px; border: 6px solid var(--cream); box-shadow: 0 10px 22px rgba(20,42,82,.28); scroll-snap-align: center; flex: 0 0 auto; }
 .support { text-align: center; }
 .support a.mail { font-weight: 800; font-size: 18px; }
-footer { text-align: center; padding: 26px 0 40px; color: #fff; font-size: 14px; text-shadow: 0 1px 2px rgba(20,42,82,.5); }
-footer a { color: #fff; font-weight: 700; margin: 0 8px; }
+/* Legal links: small and calm, but always readable (§ 5 DDG: easy to find). */
+footer { text-align: center; padding: 26px 0 40px; font-size: 12px; }
+footer .legal-links { display: inline-block; background: rgba(20,42,82,.35); color: rgba(255,255,255,.92); padding: 6px 14px; border-radius: 999px; }
+footer a { color: #fff; font-weight: 500; margin: 0 6px; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
 /* Legal pages */
 .legal { max-width: 760px; margin: 28px auto; }
 .legal h1 { font-family: "Titan One"; font-weight: 400; font-size: clamp(24px, 6.4vw, 40px); margin: 0 0 12px; overflow-wrap: anywhere; hyphens: auto; }
@@ -58,4 +61,4 @@ footer a { color: #fff; font-weight: 700; margin: 0 8px; }
 @keyframes float { 0%,100% { transform: translateY(0) rotate(-4deg); } 50% { transform: translateY(-12px) rotate(4deg); } }
 @keyframes breathe { 0%,100% { transform: scale(1) rotate(-.6deg); } 50% { transform: scale(1.02) rotate(.6deg); } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; scroll-behavior: auto !important; } }
-@media (max-width: 520px) { .stage { height: 220px; } .stage .ball { width: 80px; margin-left: -40px; } .card { padding: 18px; border-radius: 22px; } .shots img { width: 170px; } }
+@media (max-width: 520px) { .pill { font-size: 16px; padding: 10px 18px; } .stage { height: 220px; } .stage .ball { width: 80px; margin-left: -40px; } .card { padding: 18px; border-radius: 22px; } .shots img { width: 170px; } }
